@@ -152,6 +152,89 @@
           <div id="js-content" class="content-ll">
             
   
+    <article id="post-MySQL" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2021/04/25/MySQL/">MySQL</a>
+    </h1>
+  
+
+        
+        <a href="/2021/04/25/MySQL/" class="archive-article-date">
+  	<time datetime="2021-04-25T13:01:10.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-04-25</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="MySQL基础语言"><a href="#MySQL基础语言" class="headerlink" title="MySQL基础语言"></a>MySQL基础语言</h1><h2 id="DQL-Data-Query-Language"><a href="#DQL-Data-Query-Language" class="headerlink" title="DQL  Data Query Language"></a>DQL  Data Query Language</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">#查询表信息</span><br><span class="line">desc 表名;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">#去重查询</span><br><span class="line">SELECT DISTINCT department_id FROM employees;</span><br><span class="line"></span><br><span class="line">#ifnull函数</span><br><span class="line">#功能：判断某字段或表达式是否为null，如果为null 返回指定的值，否则返回原本的值</span><br><span class="line">select ifnull(commission_pct,0) from employees;</span><br></pre></td></tr></table></figure>
+
+
+
+
+
+
+
+
+
+<p><img src="/2021/04/25/MySQL/MySQL%E5%8A%A0%E5%8F%B7%E7%9A%84%E4%BD%9C%E7%94%A8.jpg" alt="MySQL加号的作用"> <img src="/2021/04/25/MySQL/04/25/MySQL/MySQL%E5%8A%A0%E5%8F%B7%E7%9A%84%E4%BD%9C%E7%94%A8.jpg" class title="MySQL加号的作用"></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">#关于+作用：做加法运算</span><br><span class="line">select 数值+数值; 直接运算</span><br><span class="line">select 字符+数值;先试图将字符转换成数值，如果转换成功，则继续运算；否则转换成0，再做运算</span><br><span class="line">select null+值;结果都为null</span><br><span class="line">#对于字符串的合并 用concat</span><br><span class="line">CONCAT(&#96;first_name&#96;,&#96;last_name&#96;) AS 姓名</span><br></pre></td></tr></table></figure>
+
+
+
+
+
+
+
+<p><img src="/2021/04/25/MySQL/MySQL01.png" alt="经典面试题"><img src="/2021/04/25/MySQL/04/25/MySQL/MySQL01.png" class title="经典面试题"></p>
+<p>用like查询 如果有null 则’%%’没有结果</p>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2021/04/25/MySQL/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
     <article id="post-复习" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
@@ -173,7 +256,7 @@
     <div class="article-entry" itemprop="articleBody">
       
         <p><img src="/2021/04/22/%E5%A4%8D%E4%B9%A0/%E6%B5%8B%E8%AF%95.jpg" alt="image-202104221832322301"><img src="/2021/04/22/%E5%A4%8D%E4%B9%A0/04/22/%E5%A4%8D%E4%B9%A0/%E6%B5%8B%E8%AF%95.jpg" class title="图片描述"></p>
-
+<h2 id="javase"><a href="#javase" class="headerlink" title="javase"></a>javase</h2><h3 id="关于string常量池"><a href="#关于string常量池" class="headerlink" title="关于string常量池"></a>关于string常量池</h3>
       
 
       
