@@ -342,7 +342,19 @@
       
         
           
-            <h2 id="1、-添加关联页面"><a href="#1、-添加关联页面" class="headerlink" title="1、 添加关联页面"></a>1、 添加关联页面</h2><ol>
+            <h2 id="1-hexo常用命令"><a href="#1-hexo常用命令" class="headerlink" title="1. hexo常用命令"></a>1. hexo常用命令</h2><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">$ hexo clean <span class="comment">//清除静态页面缓存（清除 public 文件夹)         </span></span><br><span class="line">$ hexo g     <span class="comment">//generate 在本地生成静态页面（生成 public 文件夹）         </span></span><br><span class="line">$ hexo s     <span class="comment">//server 启动本地服务 http://localhost:4000，进行预览调试           </span></span><br><span class="line">$ hexo d     <span class="comment">//deploy 远程部署，同步到 GitHub         </span></span><br><span class="line"></span><br><span class="line">$ npm install hexo-deployer-git --save    <span class="comment">//自动部署</span></span><br><span class="line">$ hexo clean &amp;&amp; hexo g &amp;&amp; hexo d          <span class="comment">//发布</span></span><br></pre></td></tr></table></figure>
+
+
+
+<h2 id="2-关于图片保存"><a href="#2-关于图片保存" class="headerlink" title="2. 关于图片保存"></a>2. 关于图片保存</h2><ol>
+<li></li>
+</ol>
+<p><img src="/2021/12/12/hexo%E4%BD%BF%E7%94%A8%E6%8A%80%E5%B7%A7/%E5%9B%BE%E7%89%87%E8%B7%AF%E5%BE%84.jpg" alt="图片保存路径"></p>
+<ol start="2">
+<li></li>
+</ol>
+<p><img src="/2021/12/12/hexo%E4%BD%BF%E7%94%A8%E6%8A%80%E5%B7%A7/hexo%E4%BD%BF%E7%94%A8%E6%8A%80%E5%B7%A7%5C%E5%9B%BE%E7%89%87%E5%85%B7%E4%BD%93%E4%BD%8D%E7%BD%AE.png" alt="图片具体位置"></p>
+<h2 id="3-添加关联页面"><a href="#3-添加关联页面" class="headerlink" title="3.  添加关联页面"></a>3.  添加关联页面</h2><ol>
 <li>使用：hexo new page “categories” 新建一个 categories 页面。<br>在主题的 _config.yml 文件中的 menu 中进行匹配</li>
 </ol>
 <figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">menu:</span></span><br><span class="line">  <span class="attr">home:</span> <span class="string">/||</span> <span class="string">home</span></span><br><span class="line">  <span class="attr">about:</span> <span class="string">/about/||</span> <span class="string">user</span></span><br><span class="line">  <span class="attr">tags:</span> <span class="string">/tags/||</span> <span class="string">tags</span></span><br><span class="line">  <span class="attr">categories:</span> <span class="string">/categories/||</span> <span class="string">th</span></span><br><span class="line">  <span class="attr">archives:</span> <span class="string">/archives/||</span> <span class="string">archive</span></span><br><span class="line">  <span class="comment">#schedule: /schedule/ || calendar</span></span><br><span class="line">  <span class="comment">#sitemap: /sitemap.xml || sitemap</span></span><br><span class="line">  <span class="comment">#commonweal: /404/ || heartbeat</span></span><br><span class="line">  <span class="comment">#横杠与前面的斜杠之前不能有空格 否则会出现bug</span></span><br></pre></td></tr></table></figure>
@@ -356,7 +368,6 @@
 <li><p>此时新建一篇文章 hexo new “hexo使用技巧”  目标路径 blog\source_posts 修改其md页面头 使其关联到categories中 </p>
 <figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">title:</span> <span class="string">hexo使用技巧</span></span><br><span class="line"><span class="attr">date:</span> <span class="number">2021-12-12 18:37:27</span></span><br><span class="line"><span class="string">tags:hexo使用技巧</span></span><br><span class="line"><span class="attr">categories:</span></span><br><span class="line"><span class="bullet">-</span> <span class="string">hexo</span> <span class="string">//表示在categories中的标签</span></span><br></pre></td></tr></table></figure></li>
 </ol>
-<p><img src="/2021/12/12/hexo%E4%BD%BF%E7%94%A8%E6%8A%80%E5%B7%A7/%E5%9B%BE%E7%89%87%E5%90%8D%E7%A7%B0.jpg" alt="hexo使用技巧"> </p>
 
           
         
